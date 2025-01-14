@@ -1,3 +1,5 @@
+//1629 곱셈
+//HINT : 나머지이론, a^n * a^n = a^(2n)
 #include <stdio.h>
 
  long int mypow(int a, int b, int m){
