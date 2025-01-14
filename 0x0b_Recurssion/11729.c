@@ -10,6 +10,12 @@ void hanoi(int a, int b, int n){
     hanoi(a, 6-a-b, n-1);
     printf("%d %d\n", a, b);
     hanoi(6-a-b, b, n-1);
+
+    // 이런식으로 (1 2) (2 3) 범위를 고정시켜버리면 안 됨..
+    // 그럼 왜 굳이 6-a-b인것인가 
+    // hanoi(1, 2, n-1);
+    // printf("%d %d\n", a, b);
+    // hanoi(2, 3, n-1);
 }
 
 int main(){
