@@ -1,4 +1,26 @@
 // 15688 수 정렬하기 5  counting sort 이용
+
+//바킹독이 하는 방식
+/*
+#include <stdio.h>
+int n;
+int cnt[2000005];
+int main(){
+    scanf("%d", &n);
+    for(int i = 0; i < n; i++){
+        int tmp;
+        scanf("%d", &tmp);
+        cnt[1000000+tmp]++;
+    }
+    for(int i = 0; i <= 2000000; i++){
+        while(cnt[i]--)
+            printf("%d\n",i-1000000);
+    }
+    return 0;
+}
+*/
+
+//내가 해봤음.. 바킹독이 한 것처럼 하는게 더 깔끔하고 쉬울듯?
 #include <stdio.h>
 int n;
 int arr[2000005];
