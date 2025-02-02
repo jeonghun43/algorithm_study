@@ -1,4 +1,4 @@
-1929 그림
+//1929 그림
 #include <stdio.h>
 struct dat
 {
